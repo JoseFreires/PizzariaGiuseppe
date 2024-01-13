@@ -1,0 +1,33 @@
+.containerMainRegister{
+    background-color: #F8F5F5;
+    font-weight: bold;
+    color: #D30000;
+}
+
+.containerHeaderRegister{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+}
+
+.containerLogoRegister{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.containerFormRegister{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    margin: 50px;
+}
+
+.containerFormRegisterAdress{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    margin: 50px;
+
+}

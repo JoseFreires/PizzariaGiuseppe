@@ -1,0 +1,63 @@
+.containerMainLogin{
+    height: 100vh; 
+    background-color:#F8F5F5; 
+    color: #D30000; 
+    font-weight: bold;
+}
+
+.containerHeaderLogin{
+    display: flex; 
+    background-color: #fff;
+    align-items: center;
+    justify-content: space-around; 
+    margin-bottom: 20px;
+}
+
+
+
+.containerInputsLogin{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 20px;
+}
+
+.containerRightImageLogin {
+    width: 100%; 
+    display:flex; 
+    align-items: center; 
+    justify-content: center;
+}
+
+#logoPizzariaLogin{
+    width: 50%;
+}
+
+.containerNovoClienteLogin{
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    
+}
+
+#linkLogin{
+    text-decoration: none;
+    color: #D30000;
+}
+
+#linkLogin:hover{
+    text-decoration: underline;
+    color: #D30000;
+}
+
+@media screen and (max-width: 300px){
+    #logoPizzariaLogin{
+        width: 0%;
+    }
+    .containerLeftLogin{
+        width: 100px;
+    }
+    .containerRightImageLogin {
+        width: 0; 
+    }
+}

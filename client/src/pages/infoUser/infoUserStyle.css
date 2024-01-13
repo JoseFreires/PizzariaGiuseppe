@@ -1,0 +1,26 @@
+.containerMainInfoUser{
+    background-color: #F8F5F5;
+    height: 100%;
+    font-weight: bold;
+    color: #D30000;
+}
+
+.containerHeaderInfoUser{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+}
+
+.containerLogoInfoUser{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.containerFormUserInfo{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    padding: 30px;
+}

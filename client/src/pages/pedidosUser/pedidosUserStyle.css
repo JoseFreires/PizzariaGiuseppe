@@ -1,0 +1,74 @@
+.containerPedidosUser{
+    background-color: #F8F5F5;    
+    color: #D30000;
+}
+
+.containerHeaderPedidos{
+    background-color: #fff;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+
+.containerLogoUser{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.containerConteudoPedidoUser{
+    display: flex;
+    padding: 30px;
+    flex-direction: column;
+}
+
+.tituloPage{
+    display: flex;
+    font-weight: bold;
+}
+
+.rowBotaoModal{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 20px;  
+}
+
+#refreshButton :hover{
+    cursor: pointer;
+}
+
+/* .buttonRefresh{
+    background-color: #D30000;
+} */
+
+.rowCards{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.containerAvisoSemPedidos{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: 20px;
+    height: 40vh;
+}
+
+.rowBotaoFinalizar{
+    justify-content: end;
+    padding: 20px;
+}
+
+.botaoFinalizarPedidos{
+    display: flex;
+    justify-content: space-around;
+    background-color: #D30000;
+    align-items: center;
+    font-weight: bold;
+    color: #fff;
+    border-radius: 50px;
+    border: 0;
+}

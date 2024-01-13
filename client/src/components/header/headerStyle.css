@@ -1,0 +1,13 @@
+.containerHeader{
+    display: flex; 
+    background-color: #fff;
+    align-items: center;
+    justify-content: space-around; 
+    margin-bottom: 20px;
+}
+
+.containerLogoHeader{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}

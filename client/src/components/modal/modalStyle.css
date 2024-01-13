@@ -1,0 +1,71 @@
+.botaoModalPedir{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 55px;
+    background-color: #D30000;
+    font-weight: bold;
+    color: #FFF;
+    border-radius: 10px;
+    border: 0;
+}
+
+
+.containerCheckbox{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+    color: #D30000;
+}
+
+.containerCheckbox input:checked{
+    background-color: #D30000;
+}
+
+#opcaoDropdown:active{
+    background-color: #D30000;
+}
+
+.rowSaborSelecionado{
+    flex-direction: row;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    justify-content: center;
+    
+}
+
+.botaoExcluirSabor{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border: 0;
+    height: 40px;
+    background: none;
+}
+
+#sabor{
+    width: 150px;
+    height: 30px;
+    margin: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #D30000;
+    white-space: normal;
+}
+
+
+.botaoAvancaModal{
+    background-color: #D30000;
+    font-weight: bold;
+    color: #fff;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border: 0;
+    height: 40px;
+}

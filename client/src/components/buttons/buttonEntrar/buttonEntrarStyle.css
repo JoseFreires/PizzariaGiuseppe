@@ -1,0 +1,20 @@
+.containerButtonLoginCadastro{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width:100px; 
+    border-radius:20px;
+    margin-top:15px;
+    margin-bottom:15px;
+    background-color:#D30000; 
+}
+
+.containerButtonLoginCadastro button{
+    color: #fff;
+    font-weight: bold;
+}
+
+.containerButtonLoginCadastro button:hover{
+    color: #fff;
+    font-size: 17px;
+}

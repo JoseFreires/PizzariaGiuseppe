@@ -1,0 +1,19 @@
+.infoLocal{
+    display: flex;
+    flex-direction: row;
+    background-color: #cfcccc;
+    justify-content: space-around;
+    width: 100%;
+    text-align: justify;
+}
+
+
+
+.leftSide{
+    margin: 10px;
+}
+
+.rightSide{
+    width: 50%;
+    margin: 5px;
+}
