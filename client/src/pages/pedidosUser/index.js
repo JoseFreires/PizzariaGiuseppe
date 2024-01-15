@@ -6,7 +6,6 @@ import { Link } from "react-router-dom";
 
 import { FaRegCheckCircle, FaRedo, FaCrow } from "react-icons/fa";
 
-
 import ModalPizzas from "../../components/modal";
 import NavLateral from "../../components/navLateral";
 import logoPizzaria from '../../assets/pizzaria_giuseppe.png'
@@ -58,10 +57,8 @@ export default function PedidosUser(){
     
     setInterval(() => {
         carregaPedidos();
-    }, 1000);
+    }, 500);
    
-    
-
 
     const enviarPedido = () => {
         let clienteAtual = [];
@@ -106,18 +103,11 @@ export default function PedidosUser(){
                     <p>Aqui você fará seu pedido do dia {hoje.toLocaleDateString()}</p>
                 </Row>
                 <Row className="rowBotaoModal">
-                    <Col>
-                    
-                    </Col>
+    
                     <Col style={{display: "flex", justifyContent:"center"}}>
                         <ModalPizzas />
                     </Col>
-                    <Col style={{display: "flex", justifyContent:"center"}}>
-                        {/* <Button style={{backgroundColor: '#D30000', alignItems: 'center', border: '0', width: '50'}}>
-                            <FaRedo size={20} onClick={recarregaPedidos} id="refreshButton"/>
-                        </Button> */}
-                        
-                    </Col>
+                    
                 </Row>
                 <Row className="rowCards">
                     {isLoading ? (
