@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Button, Container, Row, Col } from "react-bootstrap";
 
-
 import { Link } from "react-router-dom";
 
 import { FaRegCheckCircle, FaRedo, FaCrow } from "react-icons/fa";
@@ -28,37 +27,6 @@ export default function PedidosUser(){
     const tempo = Date.now()
     const hoje = new Date(tempo)
 
-    const carregaPedidos = async () => {
-        setIsLoading(true);
-        try{
-            const novosPedidos = await listaPedidos;
-            setNovosDados(novosPedidos || []);
-        } catch(error){
-            console.error(error)
-        } finally {
-            setIsLoading(false);
-        }
-        
-        
-    }
-
-    useEffect(() => {
-        carregaPedidos();
-        api.get('/pizzas')
-        .then(({data}) => {
-            setPizzasPedidas(data);
-        });
-        api.get('/clients')
-        .then(({data}) => {
-            setClienteLista(data);
-        });
-    }, []); 
-
-    
-    setInterval(() => {
-        carregaPedidos();
-    }, 500);
-   
 
     const enviarPedido = () => {
         let clienteAtual = [];
@@ -103,35 +71,29 @@ export default function PedidosUser(){
                     <p>Aqui você fará seu pedido do dia {hoje.toLocaleDateString()}</p>
                 </Row>
                 <Row className="rowBotaoModal">
-    
                     <Col style={{display: "flex", justifyContent:"center"}}>
                         <ModalPizzas />
-                    </Col>
-                    
+                    </Col> 
                 </Row>
                 <Row className="rowCards">
-                    {isLoading ? (
-                            <p>Carregando...</p>
-                        ) : (
-                            novosDados.length > 0 ? (
-                                novosDados.map((data) => (
-                                    <CardPedido 
-                                        index={data.index}
-                                        qnt={data.qntPizzas}
-                                        sabor1={data.sabor[0]}
-                                        sabor2={data.sabor[1]}
-                                        sabor3={data.sabor[2]}
-                                        preco={data.preco}
-                                        
-                                    />
-                                ))
-                            ) : (
-                                <div className="containerAvisoSemPedidos">
-                                    <p>Sem Pedidos</p>
-                                    <FaCrow size={30}/>
-                                </div>
-                            )
-                    )}
+                    {novosDados.map((data) => {
+                        return(
+                            <CardPedido 
+                                index={data.index}
+                                qnt={data.qntPizzas}
+                                sabor1={data.sabor[0]}
+                                sabor2={data.sabor[1]}
+                                sabor3={data.sabor[2]}
+                                preco={data.preco}
+                                
+                            />
+                        ) 
+                    })}
+                            
+                    <div className="containerAvisoSemPedidos">
+                        <p>Sem Pedidos</p>
+                        <FaCrow size={30}/>
+                    </div>
                     
                 </Row>
                 <Row className="rowBotaoFinalizar">

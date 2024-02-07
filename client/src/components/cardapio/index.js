@@ -16,7 +16,6 @@ export default function Recipe(){
       api.get('/pizzas')
       .then(({data}) => {
          setPizzas(data)
-         console.log(pizzas[0].sabor)
       })
    })
 
